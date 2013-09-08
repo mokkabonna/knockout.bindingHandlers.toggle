@@ -1,7 +1,7 @@
 {
     "name": "knockout.bindingHandlers.toggle",
-    "main": "src/toggle",
-    "version": "0.1.0",
+    "main": "src/toggle.js",
+    "version": "0.1.2",
     "ignore": [
         "**/*"
     ],
