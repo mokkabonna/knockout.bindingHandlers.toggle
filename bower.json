@@ -3,7 +3,8 @@
     "main": "src/toggle.js",
     "version": "0.1.2",
     "ignore": [
-        "**/*"
+        "*",
+	"**/*.html"
     ],
     "dependencies": {
         "knockout.js": ">=2.0.0"
