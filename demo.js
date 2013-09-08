@@ -2,7 +2,8 @@
 require.config({
     baseUrl: '',
     paths: {
-        knockout: 'lib/knockout.js/knockout'
+        knockout: 'lib/knockout.js/knockout',
+        jquery: 'lib/jquery/jquery'
     }
 });
 
@@ -13,7 +14,12 @@ require(['knockout', 'src/toggle'], function(ko, toggle ) {
 
     //implement here the demo of your binding
     var viewModel = {
-        demo: ko.observable('some value')
+        demoFalse: ko.observable(false),
+        demoTrue: ko.observable(true),
+        demoUndefined: ko.observable(),
+        demoNull: ko.observable(null),
+        demoNumber : ko.observable(0),
+        demoNumber2 : ko.observable(1)
     };
 
     viewModel.json = ko.computed(function() {
