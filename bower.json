@@ -3,9 +3,7 @@
     "main": "src/toggle.js",
     "version": "0.1.2",
     "ignore": [
-       "*",
-       "tests",
-       "*.{js,yml,md,json}"
+       "tests"
     ],
     "dependencies": {
         "knockout.js": ">=2.0.0"
