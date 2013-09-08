@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Demo - Knockout toggle binding</title>
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<script data-main="demo" src="lib/requirejs/require.js"></script>
+	<style>
+		label span{
+			display:inline-block;
+			width:200px;
+		}
+		.row{
+			margin-top:20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron">
+					<h1>Toggle binding for knockout</h1>
+					<p>
+						Created by <a href="https://github.com/mokkabonna">mokkabonna</a>
+					</p>
+					<p>
+						<a href="https://github.com/mokkabonna/knockout.bindingHandlers.toggle" class="btn btn-primary btn-large">View on github</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+					<h2>Default settings</h2>
+					<input class="form-control" data-bind="toggle: demo">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Real time view model</h2>
+						<pre data-bind="text: json"></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
