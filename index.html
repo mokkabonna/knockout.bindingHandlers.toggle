@@ -35,8 +35,12 @@
 				<div class="row">
 					<div class="col-md-12">
 					<h2>Default settings</h2>
-					<input class="form-control" data-bind="toggle: demo">
-
+						<p><button class="btn btn-default" data-bind="toggle:demoFalse">Toggle demoFalse</button></p>
+						<p><button class="btn btn-default" data-bind="toggle:demoTrue">Toggle demoTrue</button></p>
+						<p><button class="btn btn-default" data-bind="toggle:demoUndefined">Toggle demoUndefined</button></p>
+						<p><button class="btn btn-default" data-bind="toggle:demoNull">Toggle demoNull</button></p>
+						<p><button class="btn btn-default" data-bind="toggle:demoNumber">Toggle demoNumber</button></p>
+						<p><button class="btn btn-default" data-bind="toggle:demoNumber2">Toggle demoNumber2</button></p>
 					</div>
 				</div>
 			</div>
@@ -45,6 +49,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2>Real time view model</h2>
+						<p>Undefined values will not appear</p>
 						<pre data-bind="text: json"></pre>
 					</div>
 				</div>
