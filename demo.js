@@ -8,8 +8,9 @@ require.config({
 });
 
 
-require(['knockout', 'src/toggle'], function(ko, toggle ) {
-    ko.bindingHandlers. toggle = toggle ; //attach the binding
+require(['knockout', 'src/toggle'], function(ko, toggle) {
+    'use strict';
+    ko.bindingHandlers.toggle = toggle; //attach the binding
 
 
     //implement here the demo of your binding
@@ -18,8 +19,8 @@ require(['knockout', 'src/toggle'], function(ko, toggle ) {
         demoTrue: ko.observable(true),
         demoUndefined: ko.observable(),
         demoNull: ko.observable(null),
-        demoNumber : ko.observable(0),
-        demoNumber2 : ko.observable(1)
+        demoNumber: ko.observable(0),
+        demoNumber2: ko.observable(1)
     };
 
     viewModel.json = ko.computed(function() {
