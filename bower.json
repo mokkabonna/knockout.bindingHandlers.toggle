@@ -6,7 +6,8 @@
     "**/*"
   ],
   "dependencies": {
-    "knockout.js": ">=2.1.0"
+    "knockout.js": ">=2.1.0",
+    "jquery": ">=1.6.0"
   },
   "devDependencies": {
     "requirejs": "*"

@@ -28,13 +28,13 @@ define(['knockout', 'src/toggle'], function(ko, toggle) {
       expect(ko.dataFor(element)).to.be(viewModel);
     });
 
-    test('On click the button flips the underlying value', function() {
+    it('should flip the underlying value on clicking the button ', function() {
       element.click();
-      expect(model.obs()).to.be(true);
+      expect(viewModel.obs()).to.be(true);
       element.click();
-      expect(model.obs()).to.be(false);
+      expect(viewModel.obs()).to.be(false);
       element.click();
-      expect(model.obs()).to.be(true);
+      expect(viewModel.obs()).to.be(true);
     });
 
   });
