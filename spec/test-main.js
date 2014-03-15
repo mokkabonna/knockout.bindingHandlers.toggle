@@ -2,8 +2,7 @@ require.config({
   baseUrl: '/base',
   paths: {
     knockout: 'bower_components/knockout.js/knockout',
-    jquery: 'bower_components/jquery/dist/jquery',
-    requirejs: 'bower_components/requirejs/require'
+    jquery: 'bower_components/jquery/dist/jquery'
   }
 });
 
