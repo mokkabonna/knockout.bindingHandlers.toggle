@@ -21,7 +21,10 @@
       },
       bower: {
         target: {
-          rjsConfig: 'spec/test-main.js'
+          rjsConfig: 'spec/test-main.js',
+          options: {
+            baseUrl: './'
+          }
         }
       },
       bowerVerify: {
