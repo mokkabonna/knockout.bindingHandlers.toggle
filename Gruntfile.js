@@ -28,6 +28,9 @@
         }
       },
       bowerVerify: {
+        options: {
+          ignoreMinor: true
+        },
         test: {
           tasks: ['bower', 'karma:once']
         }
