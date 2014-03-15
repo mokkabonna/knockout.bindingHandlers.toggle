@@ -20,7 +20,7 @@
         }
       },
       bower: {
-        target: {
+        tests: {
           rjsConfig: 'spec/test-main.js',
           options: {
             baseUrl: './'
@@ -29,7 +29,7 @@
       },
       bowerVerify: {
         test: {
-          tasks: ['karma:once']
+          tasks: ['bower', 'karma:once']
         }
       },
       karma: {
