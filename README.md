@@ -6,21 +6,25 @@
 
 HTML
 
-	<input data-bind="toggle : myobs" >
+    <input data-bind="toggle: myobs" >
 
 JS
 
-	ko.applyBindings({
-		myobs : ko.observable()
-	});
+    ko.applyBindings({
+        myobs : ko.observable()
+    });
 
 
-This binding is written in AMD. It returns the binding object. You need to attach it yourself since this allows it to coexist with other possible bindings named toggle. This will only need to be done once as it will then be attached to the knockout module.
+This binding is written in AMD. It returns the binding object. It will attach itself to `knockout.bindingHandlers.toggle` once required for the first time. This can be overridden with a config section in your requirejs config like shown below.
 
-	define(['knockout', 'somefolder/toggle'], function(ko, toggle){
-		ko.bindingHandlers.toggle = toggle;
-		//use knockout
-	});
+```
+requirejs.config({
+    config: {
+        'bower_components/knockout.bindingHandlers.toggle/src/toggle': {
+            name: 'someOtherName'
+    }
+});
+```
 
 ## Behaviour
 
@@ -43,8 +47,7 @@ For accurate versions check bower.json
 
 Clone, then run (assuming you have node)
 
-    npm install
-    grunt bower //this is to install all bower packages
+    npm install & bower install
 
 You can now use grunt develop for a ready made watch task for development. Tests, linting..
 
