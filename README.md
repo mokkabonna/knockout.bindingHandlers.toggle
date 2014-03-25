@@ -22,15 +22,14 @@ requirejs.config({
     config: {
         'bower_components/knockout.bindingHandlers.toggle/src/toggle': {
             name: 'someOtherName'
+        }
     }
 });
 ```
 
 ## Behaviour
 
-TODO:
-
-### valueUpdate
+Toggles the underlying value of the observable. If not a boolean it makes it one using !(value), see demo. Good for using with show/hide functionality observables.
 
 
 ## Demo
